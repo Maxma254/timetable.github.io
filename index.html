@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Timetable</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Time</th>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>
+					<th>Sunday</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>7:00-8:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>8:00-9:00</td>
+					<td><p></p></td>
+					<td><p>PDEs</p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>9:00-10:00</td>
+					<td><p></p></td>
+					<td><p>PDEs</p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>10:00-11:00</td>
+					<td><p></p></td>
+					<td><p>make timetable</p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>11:00-12:00</td>
+					<td><p></p></td>
+					<td><p>make timetable</p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>12:00-01:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>01:00-02:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>02:00-03:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>03:00-04:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>04:00-05:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>05:00-6:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+				<tr>
+					<td>06:00-7:00</td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+					<td><p></p></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script type="text/javascript">
+			let counter = 0;
+			for (const a of document.querySelectorAll('td')) {
+					let text = a.querySelector('p')
+					let green_click_button = document.createElement('div');
+					green_click_button.style.width = '20px';
+					green_click_button.style.height = '100%';
+					green_click_button.style.float = 'right';
+					green_click_button.style.top = '0';
+					green_click_button.style.zIndex = '2';
+					green_click_button.style.display = 'inline-block';
+					green_click_button.classList.add('green_button')
+
+
+					a.insertBefore(green_click_button, text);
+
+
+
+
+					
+
+			}
+
+			for (const i of document.querySelectorAll('.green_button')) {
+				i.addEventListener('click', on_click_green_button => {
+					i.parentElement.style.backgroundColor = '#4E6C50';
+				})
+			}
+		</script>		
+	</body>
+</html>

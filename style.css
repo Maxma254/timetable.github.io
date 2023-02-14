@@ -1,0 +1,41 @@
+* {
+	margin: 0 0;
+	padding: 0 0;
+	font-family: sans-serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: #FFFFF0;
+}
+
+table {
+	width: fit-content;
+	height: fit-content;
+	margin: 100px auto;
+}
+
+tr {
+	text-align: center;
+	height: 64px;
+}
+
+th {
+	padding: 8px 10px;
+	background-color: #F2DEBA;
+	width: 90px;
+}
+
+
+td {
+	background-color: #FAECD6;
+	height: 100%;
+}
+
+p {
+	height: fit-content;
+}
